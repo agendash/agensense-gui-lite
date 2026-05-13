@@ -109,3 +109,22 @@ This repository tracks source and platform project files only. Generated local d
 - local mobile/desktop toolchain files
 
 Do not commit production API keys or user audio captures.
+
+## Release Builds
+
+GitHub Actions builds validation and release artifacts from `.github/workflows/release.yml`.
+
+Manual smoke build:
+
+```sh
+gh workflow run "Release builds"
+```
+
+Publish a GitHub Release:
+
+```sh
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+Tag builds publish Android APK/AAB, Web, Linux x64, Windows x64, macOS, and iOS no-codesign artifacts to the GitHub Release. The iOS artifact is not App Store signed; production distribution still requires Apple signing and provisioning.
