@@ -4,6 +4,8 @@ Lightweight Flutter validation client for [AgenSense](https://github.com/agendas
 
 AgenSense GUI Lite is a developer-facing test client for local provider setup, microphone capture, realtime voice WebSocket behavior, TTS playback, and AgenSense protocol debugging. It is not the end-user AgenDash desktop client.
 
+![AgenSense GUI Lite voice WebSocket debugger](docs/assets/agensense-gui-lite.png)
+
 ## What It Tests
 
 - Connection setup: AgenSense base URL, API key, provider profile, client id, and device label
